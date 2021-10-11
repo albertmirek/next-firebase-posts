@@ -1,0 +1,15 @@
+import "../styles/globals.css";
+
+import { GetServerSideProps } from "next";
+import Navbar from "../components/NavBar";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
+  );
+}
+
+export default MyApp;
